@@ -1,3 +1,11 @@
+const preloader = document.getElementById('loader');
+
+function myFunction(){
+    preloader.style.display = 'none';
+}
+
+
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId);
     const nav = document.getElementById(navId);

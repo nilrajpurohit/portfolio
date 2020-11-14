@@ -76,5 +76,4 @@ window.addEventListener('load',vanish);
 
 function vanish(){
     loader.classList.add('disppear');
-    main.classList.remove('close');
 }

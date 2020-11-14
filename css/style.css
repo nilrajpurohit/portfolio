@@ -47,11 +47,6 @@
     }
 }
 
-.close{
-    display:none;
-    transition: opacity 1s alternate;
-}
-
 :root{
     --big-font:6.25rem;
     --h2-font:1.25rem;

@@ -40,6 +40,7 @@ function scrollActive(){
     })
 }
 
+
 // SCROLL REVEAL ANIMATION
 const sr = ScrollReveal({
     origin: 'top',
@@ -69,18 +70,11 @@ sr.reveal('.skills_img',{delay:400})
 sr.reveal('.portfolio_img',{interval:200})
 
 
-const loader = document.querySelector('#loader');
-const main = document.querySelector('#main');
+var loader = document.querySelector('#loader');
+var main = document.querySelector('#main');
+window.addEventListener('load',vanish);
 
-
-function init(){
-    setTimeout(()=>{
-        loader.style.opacity = 0;
-        loader.style.display = 'none';
-
-        main.style.display = 'block';
-        setInterval(()=>(main.style.opacity = 1),50)
-    },2000)
+function vanish(){
+    loader.classList.add('disppear');
+    main.classList.remove('close');
 }
-
-init();

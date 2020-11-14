@@ -17,20 +17,25 @@
 
 #loader >span:nth-child(2){
     background:coral;
-    animation-delay: 0.2s;
+    animation-delay:0.2s;
 }
 
 #loader > span:nth-child(3){
-    background:whitesmoke;
+    background:white;
     animation-delay:0.4s;
 }
 
 @keyframes bounce{
     to{
-        width:20px;
-        height:20px;
+        width:18px;
+        height:18px;
         transform: translate3d(0,-16px,0);
     }
+}
+
+#main{
+    display:none;
+    transition: opacity 2s ease-in  ;
 }
 
 :root{

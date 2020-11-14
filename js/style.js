@@ -1,11 +1,3 @@
-const preloader = document.getElementById('loader');
-
-function myFunction(){
-    preloader.style.display = 'none';
-}
-
-
-
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId);
     const nav = document.getElementById(navId);
@@ -75,3 +67,20 @@ sr.reveal('.skills_img',{delay:400})
 
 //SCROLL PORTFOLIO
 sr.reveal('.portfolio_img',{interval:200})
+
+
+const loader = document.querySelector('#loader');
+const main = document.querySelector('#main');
+
+
+function init(){
+    setTimeout(()=>{
+        loader.style.opacity = 0;
+        loader.style.display = 'none';
+
+        main.style.display = 'block';
+        setInterval(()=>(main.style.opacity = 1),50)
+    },2000)
+}
+
+init();
